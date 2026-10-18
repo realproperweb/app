@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com/3.4.17"></script>
 <script>tailwind.config={theme:{extend:{colors:{navy:'var(--navy)',teal:'var(--teal)',sun:'var(--sun)',ink:'var(--ink)',paper:'var(--paper)',mist:'var(--mist)',line:'var(--line)',muted:'var(--muted)',coral:'var(--coral)'},fontFamily:{display:['"Bricolage Grotesque"','system-ui','sans-serif'],sans:['Archivo','system-ui','sans-serif']}}}}</script>
+<script type="module" src="auth.js"></script>
 <style>
 :root{--navy:#14305a;--teal:#1a8a9a;--sun:#ffb200;--ink:#0c1a2b;--paper:#fff;--mist:#e8f4f6;--line:#d5e3e7;--bg:#eef2ea;--muted:#51647a;--coral:#c8452d;--bar:rgba(255,255,255,.88)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--navy:#8db6ee;--teal:#4fc3d3;--ink:#e9f0f7;--paper:#13233a;--mist:#1a3149;--line:#2a4560;--bg:#0b1626;--muted:#9fb3c8;--coral:#ff8a72;--bar:rgba(11,22,38,.9)}}
@@ -76,7 +77,6 @@ body{background:var(--bg);color:var(--ink);font-family:Archivo,system-ui,sans-se
 <nav aria-label="Main" class="fixed inset-x-0 bottom-0 z-40 border-t border-line backdrop-blur" style="background:var(--bar);padding-bottom:env(safe-area-inset-bottom,0px)">
   <div id="tabs" class="mx-auto flex max-w-md"></div>
 </nav>
-
 
 </body>
 </html>
